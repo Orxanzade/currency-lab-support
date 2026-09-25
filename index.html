@@ -3,50 +3,139 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Currency Lab Support</title>
-  <meta name="description" content="Support for Currency Lab, a currency converter for iPhone and iPad.">
-  <style>
-    :root { color-scheme: dark; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif; }
-    * { box-sizing: border-box; }
-    body { margin: 0; min-height: 100vh; color: #f5f7fa; background: radial-gradient(circle at 90% 0%, #132332 0, #080b0f 34%, #030405 100%); }
-    main { width: min(760px, calc(100% - 40px)); margin: 0 auto; padding: 72px 0; }
-    .eyebrow { color: #737b86; font-size: 13px; font-weight: 700; letter-spacing: .28em; }
-    h1 { margin: 14px 0 16px; font-size: clamp(42px, 9vw, 72px); line-height: .98; letter-spacing: -.045em; }
-    .lead { max-width: 620px; color: #aeb5bf; font-size: 19px; line-height: 1.55; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin-top: 38px; }
-    section { padding: 24px; border: 1px solid #242a31; border-radius: 24px; background: linear-gradient(145deg, rgba(21,27,34,.92), rgba(8,10,13,.92)); }
-    h2 { margin: 0 0 10px; font-size: 20px; }
-    p { color: #9ca4ae; line-height: 1.55; }
-    a { color: #52e391; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    footer { margin-top: 38px; color: #717983; font-size: 14px; }
-  </style>
+  <meta name="theme-color" content="#080a0d">
+  <meta name="description" content="Currency Lab is a focused currency converter for iPhone and iPad. Explore rates, charts and market movements, or get help from the developer.">
+  <title>Currency Lab — Currency conversion, clearly.</title>
+  <link rel="icon" type="image/png" href="assets/currency-lab-icon.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <div class="eyebrow">CURRENCY LAB</div>
-    <h1>Support</h1>
-    <p class="lead">Currency Lab helps you convert currencies, compare the latest available exchange rates, and review historical movements with clear charts.</p>
-    <div class="grid">
-      <section>
-        <h2>Using the converter</h2>
-        <p>Tap the amount to edit it or use the calculator. Tap a currency code to choose another currency. Use the refresh button to request the latest available rates.</p>
-      </section>
-      <section>
-        <h2>Rates and charts</h2>
-        <p>Rates and historical series are supplied by the Frankfurter API. Values are informational and may differ from rates offered by banks or payment providers.</p>
-      </section>
-      <section>
-        <h2>Contact</h2>
-        <p>Need help or want to report a problem? Email <a href="mailto:rzazadeh@icloud.com">rzazadeh@icloud.com</a>.</p>
-      </section>
-      <section>
-        <h2>Privacy</h2>
-        <p>Currency Lab does not require an account and does not include advertising or tracking.</p>
-        <a href="privacy.html">Read the Privacy Policy →</a>
-      </section>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Currency Lab home">
+        <img src="assets/currency-lab-icon.png" width="42" height="42" alt="">
+        <span>Currency Lab</span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#support">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+      <a class="header-cta" href="https://apps.apple.com/app/id6812320622" target="_blank" rel="noopener noreferrer">Get the app <span aria-hidden="true">↗</span></a>
     </div>
-    <footer>© 2026 Orxan Rzazade · Currency Lab</footer>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span> CURRENCY LAB FOR IPHONE &amp; IPAD</p>
+        <h1 id="hero-title">Currency conversion,<br><span>clearly.</span></h1>
+        <p class="hero-lead">The rates you need, the context behind them, and a calculator right where you need it. One focused place to make sense of money across borders.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://apps.apple.com/app/id6812320622" target="_blank" rel="noopener noreferrer">Download on the App Store <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#support">Get support <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="hero-note">Free to download · No account required · English &amp; Russian</p>
+      </div>
+      <div class="hero-visual" aria-label="Currency Lab on iPhone">
+        <div class="visual-glow" aria-hidden="true"></div>
+        <img src="assets/currency-lab-iphone-cutout.png" width="1080" height="1456" alt="Currency Lab on iPhone showing an amount, exchange-rate chart, and favorite currencies" fetchpriority="high">
+      </div>
+    </section>
+
+    <div class="proof-strip" aria-label="App highlights">
+      <div class="container proof-inner">
+        <span><span class="proof-symbol" aria-hidden="true">↗</span> Latest available rates</span>
+        <span><span class="proof-symbol" aria-hidden="true">⌁</span> 1, 5 &amp; 30-day charts</span>
+        <span><span class="proof-symbol" aria-hidden="true">◎</span> Your currencies, your way</span>
+      </div>
+    </div>
+
+    <section class="section container features" id="features" aria-labelledby="features-title">
+      <div class="section-heading">
+        <p class="eyebrow">MADE FOR EVERYDAY DECISIONS</p>
+        <h2 id="features-title">More than a number.</h2>
+        <p>Convert quickly, see what changed, and keep the currencies that matter close.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-number">01 / CONVERT</span>
+          <div class="feature-icon" aria-hidden="true">↔</div>
+          <h3>Calculate as you convert.</h3>
+          <p>Enter an amount, choose your base currency, and use the built-in calculator without leaving the main screen.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-number">02 / EXPLORE</span>
+          <div class="feature-icon" aria-hidden="true">⌁</div>
+          <h3>See the bigger picture.</h3>
+          <p>Explore 1, 5, and 30-day charts, compare market movements, and look beyond a single exchange-rate quote.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-number">03 / PERSONALIZE</span>
+          <div class="feature-icon" aria-hidden="true">✳</div>
+          <h3>Keep your currencies close.</h3>
+          <p>Choose and reorder favorite currencies so the rates you check most are always easy to find.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="showcase container" aria-labelledby="showcase-title">
+      <div class="showcase-copy">
+        <p class="eyebrow">MARKET CONTEXT</p>
+        <h2 id="showcase-title">Spot the movement.<br>Understand the moment.</h2>
+        <p>Charts and a clear market overview make it easier to follow how currencies have moved over the selected period.</p>
+        <p class="source-note">Reference exchange rates and historical series are supplied by Frankfurter. Rates are informational and may differ from those offered by banks, card networks, or payment providers.</p>
+      </div>
+      <img src="assets/currency-lab-ipad-cutout.png" width="1086" height="1448" alt="Currency Lab on iPad showing a 30-day market chart and movement overview" loading="lazy">
+    </section>
+
+    <section class="section support container" id="support" aria-labelledby="support-title">
+      <div class="section-heading support-heading">
+        <div>
+          <p class="eyebrow">HERE TO HELP</p>
+          <h2 id="support-title">Support, without the runaround.</h2>
+          <p>Answers to the essentials. If something still is not right, reach the developer directly.</p>
+        </div>
+        <a class="button button-secondary" href="mailto:rzazadeh@icloud.com?subject=Currency%20Lab%20Support">Email support <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>How do I change the amount or currency?<span aria-hidden="true">+</span></summary>
+          <p>Tap the main amount to edit it or use the calculator. Tap a currency code to choose a different currency.</p>
+        </details>
+        <details>
+          <summary>How do I get the latest rates?<span aria-hidden="true">+</span></summary>
+          <p>Tap the refresh button at the top of the app. Currency Lab shows the latest available reference rates and their date; new rates may not be published every day.</p>
+        </details>
+        <details>
+          <summary>Where do the exchange rates come from?<span aria-hidden="true">+</span></summary>
+          <p>Rates and historical series come from the Frankfurter API. They are reference data, not a guaranteed rate for a transfer or card purchase.</p>
+        </details>
+        <details>
+          <summary>Does Currency Lab require an account?<span aria-hidden="true">+</span></summary>
+          <p>No. You can use the app without creating an account. Your currency preferences stay on your device. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="contact-band">
+      <div class="container contact-inner">
+        <div>
+          <p class="eyebrow">A DIRECT LINE</p>
+          <h2>Have a question or an idea?</h2>
+          <p>Bug reports, feedback, and support requests are welcome.</p>
+        </div>
+        <a href="mailto:rzazadeh@icloud.com?subject=Currency%20Lab%20Feedback">rzazadeh@icloud.com <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><span class="footer-brand">Currency Lab</span><span class="footer-credit">© 2026 Orxan Rzazade</span></div>
+      <nav aria-label="Footer navigation"><a href="https://apps.apple.com/app/id6812320622" target="_blank" rel="noopener noreferrer">App Store</a><a href="#support">Support</a><a href="privacy.html">Privacy Policy</a></nav>
+    </div>
+  </footer>
 </body>
 </html>
